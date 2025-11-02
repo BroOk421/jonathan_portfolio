@@ -105,68 +105,44 @@ const About = () => {
             <div className="flex justfiy-center items-start gap-[20px]">
               <div>
                 <img
-                  className="w-[150px] h-[150px]"
+                  className="w-[150px] h-[150px] object-cover"
                   src={grad}
                   alt="img.profile"
                 />
               </div>
               <div>
                 <div className="flex flex-col justify-start items-start">
-                  <p
-                    className="font font-bold text-[#d63737]"
-                    style={{
-                      color: "#d63737",
-                      fontSize: "18px",
-                    }}
-                  >
+                  <p className="font1 font-bold text-[#d63737] text-[18px] max-md:text-[15px]">
                     NAME
                   </p>
                   <span
-                    className="font"
-                    style={{
-                      color: theme === "dark" ? "#f0edd4" : "#2C2C29",
-                      fontSize: "18px",
-                    }}
+                    className={`font1 font-bold ${
+                      theme === "dark" ? "text-[#f0edd4]" : "text-[#2C2C29]"
+                    } text-[18px] max-md:text-[13px]`}
                   >
                     JONATHAN P. GAMBOA
                   </span>
                 </div>
                 <div className="flex flex-col justify-start items-start">
-                  <p
-                    className="font font-bold"
-                    style={{
-                      color: "#d63737",
-                      fontSize: "18px",
-                    }}
-                  >
+                  <p className="font1 font-bold text-[#d63737] text-[18px] max-md:text-[15px]">
                     AGE
                   </p>
                   <span
-                    className="font"
-                    style={{
-                      color: theme === "dark" ? "#f0edd4" : "#2C2C29",
-                      fontSize: "18px",
-                    }}
+                    className={`font1 font-bold ${
+                      theme === "dark" ? "text-[#f0edd4]" : "text-[#2C2C29]"
+                    } text-[18px] max-md:text-[13px]`}
                   >
                     26
                   </span>
                 </div>
                 <div className="flex flex-col justify-start items-start">
-                  <p
-                    className="font font-bold"
-                    style={{
-                      color: "#d63737",
-                      fontSize: "18px",
-                    }}
-                  >
+                  <p className="font1 font-bold text-[#d63737] text-[18px] max-md:text-[15px]">
                     POSITION
                   </p>
                   <span
-                    className="font"
-                    style={{
-                      color: theme === "dark" ? "#f0edd4" : "#2C2C29",
-                      fontSize: "18px",
-                    }}
+                    className={`font1 font-bold ${
+                      theme === "dark" ? "text-[#f0edd4]" : "text-[#2C2C29]"
+                    } text-[18px] max-md:text-[13px]`}
                   >
                     Web Designer | Web Developer | UI / UX
                   </span>
@@ -195,7 +171,7 @@ const About = () => {
                   {category.map((item, index) => (
                     <div key={index}>
                       <span
-                        className="text-[40px] font-bold"
+                        className="text-[40px] font-bold max-md:text-[30px]"
                         style={{
                           color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                           transition: "all 0.3s ease-in-out",
@@ -207,7 +183,7 @@ const About = () => {
                   ))}
                   <motion.img
                     key={theme}
-                    className="flex h-[35px] w-[45px]"
+                    className="flex h-[35px] w-[45px] max-md:h-[25px] max-md:w-[35px]"
                     src={theme === "dark" ? BubbleCream : BubbleBlack}
                     alt={theme === "dark" ? BubbleCream : BubbleBlack}
                     initial={{ opacity: 0 }}
@@ -232,7 +208,7 @@ const About = () => {
                   {category2.map((item, index) => (
                     <div key={index}>
                       <span
-                        className="text-[38px] font-bold"
+                        className="text-[38px] font-bold max-md:text-[30px]"
                         style={{
                           color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                           transition: "all 0.3s ease-in-out",
@@ -244,7 +220,7 @@ const About = () => {
                   ))}
                   <motion.img
                     key={theme}
-                    className="flex h-[35px] w-[40px]"
+                    className="flex h-[35px] w-[40px] max-md:h-[25px] max-md:w-[35px]"
                     src={theme === "dark" ? CapcutCream : CapcutBlack}
                     alt={theme === "dark" ? CapcutCream : CapcutBlack}
                     initial={{ opacity: 0 }}
@@ -269,7 +245,7 @@ const About = () => {
                   {category3.map((item, index) => (
                     <div key={index}>
                       <p
-                        className="text-[38px] font-bold"
+                        className="text-[38px] font-bold max-md:text-[30px]"
                         style={{
                           color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                           transition: "all 0.3s ease-in-out",
@@ -303,7 +279,7 @@ const About = () => {
               </div>
               <div className="flex justify-center items-center h-auto w-full gap-[30px] rounded-[20px]">
                 <FaBriefcase
-                  className="text-[60px] max-lg:text-[55px] max-md:text-[45px]"
+                  className="text-[60px] max-lg:text-[55px] max-md:text-[30px]"
                   style={{
                     color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                     transition: "all 0.3s ease-in-out",
@@ -329,7 +305,7 @@ const About = () => {
               </div>
               <div className="flex justify-center items-center h-auto w-full gap-[30px] rounded-[20px]">
                 <SiTask
-                  className="text-[60px] max-lg:text-[55px] max-md:text-[45px]"
+                  className="text-[60px] max-lg:text-[55px] max-md:text-[30px]"
                   style={{
                     color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                     transition: "all 0.3s ease-in-out",
@@ -355,7 +331,7 @@ const About = () => {
               </div>
               <div className="flex justify-center items-center h-auto w-full gap-[30px] rounded-[20px]">
                 <CgWebsite
-                  className="text-[60px] max-lg:text-[55px] max-md:text-[45px]"
+                  className="text-[60px] max-lg:text-[55px] max-md:text-[30px]"
                   style={{
                     color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                     transition: "all 0.3s ease-in-out",
@@ -425,7 +401,7 @@ const About = () => {
                   </button>
                 </div>
               </div>
-              <div className=" w-full flex flex-col justify-between [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden overflow-auto">
+              <div className=" w-full flex flex-col justify-between [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden overflow-auto max-md:h-[450px]">
                 {!isSwitch ? (
                   <>
                     <p

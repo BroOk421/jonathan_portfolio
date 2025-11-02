@@ -27,7 +27,7 @@ const CountUp = ({ end, duration = 2000, className = "", style }) => {
   }, [end, duration]);
 
   return (
-    <span className="font2 text-[#d63737] text-[48px] max-lg:text-[43px] max-md:text-[40px]">
+    <span className="font2 text-[#d63737] text-[48px] max-lg:text-[43px] max-md:text-[35px]">
       {count.toLocaleString()}
     </span>
   );

@@ -16,7 +16,7 @@ const Projects = () => {
       transition={{ duration: 2, ease: "easeOut" }}
       className={`flex flex-col self-start h-auto w-full justify-start items-center pr-[10px] pl-[10px] pt-[50px] pb-[50px] gap-[50px] fade-in ${
         isVisible ? "visible" : ""
-      } max-lg:pt-[80px] max-lg:pb-[30px]`}
+      } max-lg:pt-[30px] max-lg:pb-[30px]`}
     >
       <div className="flex flex-col h-auto justify-start items-center w-[100%] gap-[50px] p-[50px] max-md:p-[10px]">
         <div>
@@ -29,23 +29,16 @@ const Projects = () => {
         </div>
         <div
           className="grid h-auto w-full p-[20px] gap-[20px]
-  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center max-md:p-[10px]"
+  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 place-items-center max-md:p-[10px] max-lg:gap-[30px]"
         >
           {projects.map((project, index) => (
             <div
               key={index}
-              className={`flex flex-col h-[350px] w-full p-[10px] gap-[10px] rounded-[20px] max-xl:h-[300px] max-md:w-[65%] ${
+              className={`flex flex-col h-[350px] w-full p-[10px] gap-[10px] rounded-[20px] max-xl:h-[330px] ${
                 theme === "light"
                   ? "border border-[#2C2C29]"
                   : "border border-[#f0edd4]"
-              }`}
-              // style={{
-              //   boxShadow:
-              //     theme === "dark"
-              //       ? "0px 0px 10px 0px #d63737"
-              //       : "0px 0px 5px 0px #2C2C29",
-              // }}
-            >
+              }`}>
               <div
                 className={`flex justify-center items-center h-[250px] w-full max-xl:h-[220px]`}
               >

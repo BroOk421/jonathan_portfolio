@@ -18,7 +18,7 @@ const Experience = () => {
           initial={{ x: -200, opacity: 0 }}
           animate={{ x: isVisible ? 0 : -200, opacity: isVisible ? 1 : 0 }}
           transition={{ duration: 0.5, ease: "easeOut" }}
-          className="relative flex flex-col items-end justify-around h-[520px] p-[20px] gap-[30px] w-[60%] max-lg:flex-row max-lg:h-[100px]"
+          className="relative flex flex-col items-end justify-around h-[520px] p-[20px] gap-[30px] w-[60%] max-lg:flex-row max-lg:h-[100px] max-md:w-full"
         >
           <div
             className={`absolute top-1/2 left-[80px] transform -translate-x-1/2 -translate-y-1/2 h-[400px] w-[1px] z-[1] ${
