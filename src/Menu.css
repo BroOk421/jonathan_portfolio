@@ -1,0 +1,36 @@
+.hover-border {
+  position: relative;
+  display: inline-block;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+.hover-border:hover::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  transition: all 0.4s ease-in-out;
+}
+
+.hover-border:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
+  transition: all 0.4s ease-in-out;
+}
+
+.hover-border:hover::before,
+.hover-border:hover::after {
+  border-color: #d63737;
+  transform: scale(1);
+}

@@ -1,0 +1,163 @@
+.font {
+  font-family: "Share Tech", sans-serif;
+  /*Font list "Share Tech" and "Bebas Neue" and "Rubik Mono One", monospace and "Bowlby One SC", sans-serif */
+  text-transform: uppercase;
+  font-size: 13px;
+  color: black;
+}
+
+.primary {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 40px;
+}
+
+.font2 {
+  font-family: "Bowlby One SC", sans-serif;
+}
+.font3 {
+  font-family: "Rubik Mono One", monospace;
+}
+
+body {
+  overflow: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  width: 15px;
+  height: 15px;
+  background: white;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  top: var(--y, 0);
+  left: var(--x, 0);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 9999;
+}
+
+.under {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgb(215, 215, 215);
+  padding: 25px;
+}
+
+.carousel {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  gap: 50px;
+  animation: scroll 35s linear infinite;
+}
+
+.carousel2 {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: max-content;
+  gap: 50px;
+  animation: scroll2 35s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-23.33%);
+  }
+}
+
+@keyframes scroll2 {
+  0% {
+    transform: translateX(-23.33%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.div-gradient {
+  position: relative;
+  width: 90%;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.div-gradient::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    rgba(var(--gradient-color), 1) 0%,
+    rgba(var(--gradient-color), 0) 25%,
+    rgba(var(--gradient-color), 0) 75%,
+    rgba(var(--gradient-color), 1) 100%
+  );
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-inLeft {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: opacity 2s ease-in-out;
+}
+
+.fade-inOnly.visible {
+  opacity: 1;
+}
+
+.fade-inRight {
+  opacity: 0;
+  transform: translateX(100px);
+  transition: opacity 2s ease-in-out;
+}
+
+.fade-inOnly.visible {
+  opacity: 1;
+}
+
+.set-rotate {
+  animation: rotate 10s linear infinite;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+
+@keyframes pulseGrow {
+  0%,
+  100% {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
