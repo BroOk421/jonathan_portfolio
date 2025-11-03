@@ -129,54 +129,40 @@ const Experience = () => {
               animate={{ opacity: 1 }}
               exit={{ opacity: 0 }}
               transition={{ duration: 0.5, ease: "easeOut" }}
-              className="flex mb-[20px]"
+              className="flex  mb-[20px]"
             >
               <div className="flex flex-col justify-center items-center text-center h-full w-full p-[10px] gap-[20px]">
                 <div className="flex flex-col justify-center items-center w-full">
-                  <p
-                    className="font2 text-[#d63737]"
-                    style={{
-                      fontSize: "25px",
-                    }}
-                  >
+                  <p className="font1 text-[#d63737] text-[25px] max-md:text-[16px]">
                     Accucell Diagnostic Center
                   </p>
                   <p
-                    className="font"
+                    className="font text-[18px] max-md:text-[16px]"
                     style={{
-                      fontSize: "18px",
                       color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                     }}
                   >
                     Feb 15, 2021 - Feb 15, 2023
                   </p>
-                  <div className="flex justify-center items-center gap-[20px] w-full">
+                </div>
+                <div className="flex flex-col h-auto text-justify w-full gap-[20px] [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden overflow-auto">
+                  <div className="flex justify-center items-center gap-[10px] w-full">
                     <p
+                      className="font1 text-[18px] max-md:text-[16px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       POSITION:
                     </p>
-                    <p
-                      className="text-[#d63737]"
-                      style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
-                      }}
-                    >
+                    <p className="font1 text-[#d63737] text-[18px] max-md:text-[14px]">
                       Receptionist / Encoder
                     </p>
                   </div>
-                </div>
-                <div className="flex flex-col h-auto text-justify w-full gap-[20px] [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden overflow-auto">
-                  <div className="flex flex-col gap-[10px] max-lg:justify-center max-lg:items-center">
+                  <div className="flex flex-col gap-[10px] max-lg:justify-center max-lg:items-start">
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
@@ -184,9 +170,8 @@ const Experience = () => {
                       concerns
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
@@ -194,9 +179,8 @@ const Experience = () => {
                       using Microsoft Access , Microsoft word and Excel.
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
@@ -204,9 +188,8 @@ const Experience = () => {
                       patients
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
@@ -214,9 +197,8 @@ const Experience = () => {
                       digital results
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
@@ -228,6 +210,7 @@ const Experience = () => {
               </div>
             </motion.div>
           )}
+
           {popUp === "MVP" && (
             <motion.div
               initial={{ opacity: 0 }}
@@ -238,18 +221,12 @@ const Experience = () => {
             >
               <div className="flex flex-col justify-center items-center text-center h-full w-full p-[10px] gap-[20px]">
                 <div className="flex flex-col justify-center items-center w-full">
-                  <p
-                    className="font2 text-[#d63737]"
-                    style={{
-                      fontSize: "25px",
-                    }}
-                  >
+                  <p className="font1 text-[#d63737] text-[25px] max-md:text-[16px]">
                     MVP.dev
                   </p>
                   <p
-                    className="font"
+                    className="font text-[18px] max-md:text-[16px]"
                     style={{
-                      fontSize: "18px",
                       color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                     }}
                   >
@@ -257,31 +234,23 @@ const Experience = () => {
                   </p>
                 </div>
                 <div className="flex flex-col h-auto text-justify w-full gap-[20px] [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden overflow-auto">
-                  <div className="flex justify-center items-center gap-[20px] w-full">
+                  <div className="flex justify-center items-center gap-[10px] w-full">
                     <p
+                      className="font1 text-[18px] max-md:text-[16px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       POSITION:
                     </p>
-                    <p
-                      className="text-[#d63737]"
-                      style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
-                      }}
-                    >
+                    <p className="font1 text-[#d63737] text-[18px] max-md:text-[14px]">
                       Web Designer / Web Developer
                     </p>
                   </div>
-                  <div className="flex flex-col gap-[10px] max-lg:justify-center max-lg:items-center">
+                  <div className="flex flex-col gap-[10px] max-lg:justify-center max-lg:items-start">
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
@@ -289,18 +258,16 @@ const Experience = () => {
                       platform it use for making website
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       ○ Making Website from the scratch
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
@@ -308,36 +275,32 @@ const Experience = () => {
                       platform (Front-end and Backend)
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       ○ Making mockup Designs (Web Designer)
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       ○ API Integration by Using (API Connector)
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       ○ Database (Postgresql, Mysql)
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
@@ -358,18 +321,12 @@ const Experience = () => {
             >
               <div className="flex flex-col justify-center items-center text-center h-full w-full p-[10px] gap-[20px]">
                 <div className="flex flex-col justify-center items-center w-full">
-                  <p
-                    className="font2 text-[#d63737]"
-                    style={{
-                      fontSize: "25px",
-                    }}
-                  >
+                  <p className="font1 text-[#d63737] text-[25px] max-md:text-[16px]">
                     Barcotech Philippines Inc.
                   </p>
                   <p
-                    className="font"
+                    className="font text-[18px] max-md:text-[16px]"
                     style={{
-                      fontSize: "18px",
                       color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                     }}
                   >
@@ -377,76 +334,63 @@ const Experience = () => {
                   </p>
                 </div>
                 <div className="flex flex-col h-auto text-justify w-full gap-[20px] [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden overflow-auto">
-                  <div className="flex justify-center items-center gap-[20px] w-full">
+                  <div className="flex justify-center items-center gap-[10px] w-full">
                     <p
+                      className="font1 text-[18px] max-md:text-[16px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       POSITION:
                     </p>
-                    <p
-                      className="text-[#d63737]"
-                      style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
-                      }}
-                    >
+                    <p className="font1 text-[#d63737] text-[18px] max-md:text-[14px]">
                       Web Designer / Multimedia Designer
                     </p>
                   </div>
-                  <div className="flex flex-col gap-[10px] max-lg:justify-center max-lg:items-center">
+                  <div className="flex flex-col gap-[10px] max-lg:justify-center max-lg:items-start">
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       ○ Creating Website Design using Wordpress / Elementor
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       ○ Implement SEO and Google Analystics
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       ○ Coding with HTML CSS Javascript, Jquery
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       ○ Create layout using Photoshop and Canva
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >
                       ○ Responsiveness of Website for Desktop / Tablet / Mobile
                     </p>
                     <p
+                      className="font1 text-[18px] max-md:text-[14px]"
                       style={{
-                        fontFamily: "Share Tech, sans-serif",
-                        fontSize: "18px",
                         color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                       }}
                     >

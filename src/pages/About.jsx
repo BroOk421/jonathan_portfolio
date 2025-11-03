@@ -80,7 +80,7 @@ const About = () => {
       id="about"
       className={`flex flex-col self-start h-auto w-full justify-center items-center pt-[100px] pb-[100px] fade-in ${
         isVisible ? "visible" : ""
-      } max-lg:pt-[30px]`}
+      } max-lg:pt-[10px]`}
     >
       <motion.div
         initial={{ opacity: 0 }}
@@ -261,7 +261,7 @@ const About = () => {
           </div>
         </div>
         <div className="flex flex-col h-[621px] w-full pt-[50px] pb-[20px] pr-[10px] pl-[10px] gap-[30px]">
-          <div className="flex w-full rounded-[20px] gap-[20px]">
+          <div className="flex w-full rounded-[20px] gap-[20px] max-md:gap-[10px]">
             <div
               className={`flex flex-col justify-center items-center h-auto w-full p-[10px] rounded-[20px] ${
                 theme === "light"
@@ -271,7 +271,7 @@ const About = () => {
             >
               <div>
                 <p
-                  className="font2 text-[24px] max-lg:text-[20px] max-md:text-[18px]"
+                  className="font2 text-[24px] max-lg:text-[20px] max-md:text-[14px]"
                   style={{ color: theme === "dark" ? "#f0edd4" : "#2C2C29" }}
                 >
                   Experience
@@ -297,7 +297,7 @@ const About = () => {
             >
               <div>
                 <p
-                  className="font2 text-[24px] max-lg:text-[20px] max-md:text-[18px]"
+                  className="font2 text-[24px] max-lg:text-[20px] max-md:text-[14px]"
                   style={{ color: theme === "dark" ? "#f0edd4" : "#2C2C29" }}
                 >
                   Projects
@@ -323,7 +323,7 @@ const About = () => {
             >
               <div>
                 <p
-                  className="font2 text-[24px] max-lg:text-[20px] max-md:text-[18px]"
+                  className="font2 text-[24px] max-lg:text-[20px] max-md:text-[14px]"
                   style={{ color: theme === "dark" ? "#f0edd4" : "#2C2C29" }}
                 >
                   Website
@@ -343,7 +343,7 @@ const About = () => {
           </div>
           {/* div last*/}
           <div
-            className={`"flex flex-col h-auto w-full p-[20px] gap-[30px] rounded-[20px]`}
+            className={`"flex flex-col h-auto w-full p-[20px] gap-[30px] rounded-[20px] max-md:p-[5px]`}
           >
             <div className="flex flex-col justify-between gap-[20px]">
               <div className="flex justify-between items-center w-full">

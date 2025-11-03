@@ -33,7 +33,6 @@ import { TbBrandAdobePremier, TbBrandCSharp } from "react-icons/tb";
 
 import { useTheme } from "../context/ThemeContext";
 
-
 const Carousel = ({ isOpen, setIsOpen }) => {
   const { theme } = useTheme();
 
@@ -82,7 +81,7 @@ const Carousel = ({ isOpen, setIsOpen }) => {
         {[...category, ...category, ...category].map((item, index) => (
           <div key={index}>
             <span
-              className="text-[45px]"
+              className="text-[38px] max-md:text-[30px]"
               style={{
                 color: theme !== "light" ? "#f0edd4" : "#2C2C29",
               }}
@@ -96,7 +95,7 @@ const Carousel = ({ isOpen, setIsOpen }) => {
         {[...category2, ...category2, ...category2].map((item, index) => (
           <div key={index}>
             <span
-              className="text-[45px]"
+              className="text-[38px] max-md:text-[30px]"
               style={{
                 color: theme !== "light" ? "#f0edd4" : "#2C2C29",
               }}
