@@ -28,12 +28,13 @@ import {
   SiJira,
   SiExpress,
 } from "react-icons/si";
+import { FaStripe } from "react-icons/fa6";
 import { PiFileSql } from "react-icons/pi";
 import { TbBrandAdobePremier, TbBrandCSharp } from "react-icons/tb";
 
 import { useTheme } from "../context/ThemeContext";
 
-const Carousel = ({ isOpen, setIsOpen }) => {
+const Carousel = () => {
   const { theme } = useTheme();
 
   const category = [
@@ -52,6 +53,7 @@ const Carousel = ({ isOpen, setIsOpen }) => {
     <FaNodeJs />,
     <FaWordpress />,
     <FaElementor />,
+    <FaStripe />,
   ];
 
   const category2 = [

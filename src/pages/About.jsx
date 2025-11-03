@@ -28,6 +28,7 @@ import {
   FaElementor,
   FaBriefcase,
 } from "react-icons/fa";
+import { FaStripe } from "react-icons/fa6";
 import {
   SiAdobephotoshop,
   SiAdobeaftereffects,
@@ -37,6 +38,7 @@ import {
   SiExpress,
   SiTask,
 } from "react-icons/si";
+
 import { PiFileSql } from "react-icons/pi";
 import { CgWebsite } from "react-icons/cg";
 import { useState } from "react";
@@ -54,6 +56,7 @@ const category = [
   <FaReact />,
   <BiLogoTailwindCss />,
   <BiLogoFirebase />,
+  <FaStripe />,
   <FaWordpress />,
   <FaElementor />,
 ];

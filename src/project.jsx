@@ -4,11 +4,13 @@ import ChatgptCream from "./assets/ChatgptCream.png";
 import ChatgptBlack from "./assets/ChatgptBlack.png";
 import { BiLogoJavascript, BiLogoPostgresql } from "react-icons/bi";
 import { FaWordpress, FaElementor, FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import { FaStripe } from "react-icons/fa6";
 import { PiFileSql } from "react-icons/pi";
 import StudentReview from "./assets/StudentReview.png";
 import themAIGuy from "./assets/themAIguy.png";
 import Barcotech from "./assets/Barcotech.png";
 import RCA from "./assets/rca-hapi.png";
+import "./Global.css";
 
 const projects = [
   {
@@ -18,6 +20,8 @@ const projects = [
       <BiLogoJavascript />,
       <BiLogoPostgresql />,
       { dark: BubbleCream, light: BubbleBlack },
+      <FaStripe />,
+      <p className="font1 text-[16px] font-bold">REST API</p>,
     ],
   },
   {
@@ -27,6 +31,8 @@ const projects = [
       { dark: BubbleCream, light: BubbleBlack },
       <BiLogoJavascript />,
       { dark: ChatgptCream, light: ChatgptBlack },
+      <FaStripe />,
+      <p className="font1 text-[16px] font-bold">REST API</p>,
     ],
   },
   {
