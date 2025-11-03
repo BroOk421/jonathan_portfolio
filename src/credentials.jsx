@@ -12,10 +12,11 @@ const credentials = [
       name: "Services",
       list: [
         "Web Development",
+        "Web Designing",
+        "Ecommerce",
         "CRM",
         "SaaS",
         "Video Editing",
-        "Posters",
         "Flyers and Digtal Posting",
       ],
     },
