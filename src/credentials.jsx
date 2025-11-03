@@ -17,7 +17,6 @@ const credentials = [
         "CRM",
         "SaaS",
         "Video Editing",
-        "Flyers and Digtal Posting",
       ],
     },
     social: {
