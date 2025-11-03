@@ -143,7 +143,7 @@ const Footer = () => {
                 {credential.social.list.map((item, idx) => (
                   <p
                     key={idx}
-                    className="font cursor-pointer hover:underline"
+                    className="font cursor-pointer"
                     style={{
                       color: theme === "dark" ? "#f0edd4" : "#2C2C29",
                     }}
