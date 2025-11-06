@@ -72,7 +72,7 @@ const Experience = () => {
               style={{ fontSize: popUp === "Barcotech" ? "36px" : "24px" }}
               onClick={() => setPopUp("Barcotech")}
             >
-              BTI
+              BPI
             </button>
           </div>
           <div className="flex justify-start items-center h-auto w-[70%] max-lg:justify-center">
