@@ -23,8 +23,11 @@ const credentials = [
       name: "Social Mediai",
       list: [
         { name: "Facebook", url: "https://www.facebook.com/rzq.polar" },
-        { name: "LinkedIn", url: "https://www.linkedin.com/" },
-        { name: "Instagram", url: "https://www.instagram.com/" },
+        {
+          name: "LinkedIn",
+          url: "https://www.linkedin.com/in/jonathan-gamboa-072b55248",
+        },
+        { name: "Github", url: "https://github.com/BroOk421" },
       ],
     },
   },

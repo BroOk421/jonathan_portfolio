@@ -7,6 +7,7 @@ import {
   LuLinkedin,
   LuInstagram,
   LuBolt,
+  LuGithub,
 } from "react-icons/lu";
 import LogoWhite from "../assets/logo-white.png";
 import LogoBlack from "../assets/logo-black.png";
@@ -129,7 +130,7 @@ const Navbar = () => {
                     }}
                   />
                 </a>
-                <a href="https://www.linkedin.com">
+                <a href="https://www.linkedin.com/in/jonathan-gamboa-072b55248">
                   <LuLinkedin
                     className="text-[25px] hover:scale-[1.1] transition ease-in-out"
                     style={{
@@ -137,8 +138,8 @@ const Navbar = () => {
                     }}
                   />
                 </a>
-                <a href="https://www.instagram.com">
-                  <LuInstagram
+                <a href="https://github.com/BroOk421">
+                  <LuGithub
                     className="text-[25px] hover:scale-[1.1] transition ease-in-out"
                     style={{
                       color: theme === "dark" ? "#f0edd4" : "#2C2C29",
