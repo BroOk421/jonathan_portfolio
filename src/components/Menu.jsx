@@ -23,7 +23,7 @@ const Menu = ({ menu, setMenu }) => {
       <motion.div
         className={`flex justify-center items-center  absolute top-0 pt-[30px] left-0 w-full h-[100vh] opacity-[100%] ${
           theme === "light" ? "bg-[#f0edd4]" : "bg-[#2C2C29]"
-        } z-[-1] transform transition-transform duration-500 ease-in-out p-[10px]`}
+        } z-[-1] transform transition-transform duration-500 ease-in-out p-[10px] hidden max-lg:block`}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.3, ease: "easeOut" }}

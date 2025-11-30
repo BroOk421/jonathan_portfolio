@@ -12,7 +12,6 @@ import {
   BiLogoTailwindCss,
   BiLogoJavascript,
   BiLogoMongodb,
-  BiLogoTypescript,
   BiLogoFirebase,
 } from "react-icons/bi";
 import {
@@ -28,7 +27,6 @@ import {
   FaElementor,
   FaBriefcase,
 } from "react-icons/fa";
-import { FaStripe } from "react-icons/fa6";
 import {
   SiAdobephotoshop,
   SiAdobeaftereffects,
@@ -47,7 +45,6 @@ const category = [
   <FaHtml5 />,
   <FaCss3Alt />,
   <BiLogoJavascript />,
-  <BiLogoTypescript />,
   <FaBootstrap />,
   <PiFileSql />,
   <FaNodeJs />,
@@ -56,7 +53,6 @@ const category = [
   <FaReact />,
   <BiLogoTailwindCss />,
   <BiLogoFirebase />,
-  <FaStripe />,
   <FaWordpress />,
   <FaElementor />,
 ];
@@ -263,7 +259,7 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col h-[621px] w-full pt-[50px] pb-[20px] pr-[10px] pl-[10px] gap-[30px]">
+        <div className="flex flex-col h-[621px] w-full pt-[20px] pb-[20px] pr-[10px] pl-[10px] gap-[30px]">
           <div className="flex w-full rounded-[20px] gap-[20px] max-md:gap-[10px]">
             <div
               className={`flex flex-col justify-center items-center h-auto w-full p-[10px] rounded-[20px] ${
@@ -432,7 +428,7 @@ const About = () => {
                   </>
                 ) : (
                   <div className="flex flex-col justify-center items-center h-auto w-full gap-[30px]">
-                    <div className="flex flex-col justify-center items-center h-auto w-full gap-[5px]">
+                    <div className="flex flex-col justify-center items-center h-auto w-full pt-[30px] gap-[5px]">
                       <p
                         className="text-gray-800 leading-relaxed text-justify"
                         style={{

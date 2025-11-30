@@ -5,7 +5,6 @@ import {
   LuX,
   LuFacebook,
   LuLinkedin,
-  LuInstagram,
   LuBolt,
   LuGithub,
 } from "react-icons/lu";
@@ -14,7 +13,7 @@ import LogoBlack from "../assets/logo-black.png";
 import Menu from "../components/Menu.jsx";
 import { motion } from "framer-motion";
 import { useTheme } from "../context/ThemeContext.jsx";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
@@ -27,20 +26,54 @@ const Navbar = () => {
     }
   };
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 768) {
+        setMenu(false);
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
-      transition={{ duration: 1.5, ease: "easeOut" }}
-      className="flex gap-6 justify-center text-white fixed w-full top-0 z-[99]"
+      transition={{ duration: 1.5, ease: "ease-in-out" }}
+      className={`flex gap-6 justify-center fixed w-full top-0 z-[99] transition-colors duration-300 ease-in-out ${
+        theme === "dark" && isScrolled
+          ? "bg-[#2C2C29]"
+          : theme === "light" && isScrolled
+          ? "bg-[#f0edd4]"
+          : "bg-transparent"
+      }`}
     >
       <div
-        className={`flex justify-between items-center gap-[50px] min-w-full pt-[35px] pb-[35px pl-[40px] pr-[40px] max-md:w-[100%]`}
+        className={`flex justify-between items-center gap-[50px] min-w-full pt-[25px] pb-[25px] pl-[40px] pr-[40px] max-md:w-[100%]`}
       >
         <div className="flex justify-center items-center">
           {theme === "light" ? (
-            <button onClick={() => scrollViewToSection("home")}>
+            <button
+              onClick={() => {
+                scrollViewToSection("home");
+                setMenu(false);
+              }}
+            >
               <img
                 src={LogoBlack}
                 alt={LogoBlack}
@@ -60,7 +93,7 @@ const Navbar = () => {
 
         {!menu ? (
           <>
-            <div className="flex justify-center items-center gap-[70px] z-[50] max-md:hidden">
+            <div className="flex justify-center items-center gap-[70px] z-[50] max-lg:hidden">
               <button
                 className="font hover-border w-[60px] hover:scale-[1.1] transition ease-in-out mix-blend-difference"
                 style={{ color: theme !== "light" ? "#f0edd4" : "#2C2C29" }}
@@ -98,7 +131,10 @@ const Navbar = () => {
               </button>
             </div>
             <div>
-              <button onClick={() => setMenu(true)}>
+              <button
+                onClick={() => setMenu(true)}
+                className="hidden max-lg:block"
+              >
                 <LuBolt
                   className="set-rotate text-[25px] mix-multiply"
                   style={{ color: theme === "dark" ? "#f0edd4" : "#2C2C29" }}

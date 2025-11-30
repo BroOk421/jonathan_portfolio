@@ -2,7 +2,6 @@ import {
   BiLogoTailwindCss,
   BiLogoJavascript,
   BiLogoMongodb,
-  BiLogoTypescript,
   BiLogoFirebase,
 } from "react-icons/bi";
 import {
@@ -43,7 +42,6 @@ const Carousel = () => {
     <FaCss3Alt />,
     <FaHtml5 />,
     <BiLogoJavascript />,
-    <BiLogoTypescript />,
     <BiLogoMongodb />,
     <FaPython />,
     <TbBrandCSharp />,

@@ -33,10 +33,10 @@ const Hero = () => {
           I'm Jonathan Gamboa
         </p>
         <p
-          className="font2 text-[23px] leading-none text-center max-md:text-[18px]"
+          className="font2 text-[23px] leading-none text-center max-md:text-[18px] mt-[25px]"
           style={{ color: theme === "dark" ? "#f0edd4" : "#2C2C29" }}
         >
-          Web Developer | UI / UX Designer | Web Designer
+          Web Developer | Web Designer
         </p>
         <div className="flex justify-center items-center bg-[#d63737] pl-[35px] pr-[35px] pt-[10px] pb-[10px] mt-[40px] mb-[100px] rounded-full hover:scale-[1.1] transition ease-out max-md:mb-[50px]">
           <a href="https://drive.google.com/file/d/1oVaVuoQMRZtiH5bBX2Y9xZae4Vr_zQ7K/view?usp=sharing">
