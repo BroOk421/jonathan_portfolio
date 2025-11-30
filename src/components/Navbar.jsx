@@ -57,9 +57,9 @@ const Navbar = () => {
       transition={{ duration: 1.5, ease: "ease-in-out" }}
       className={`flex gap-6 justify-center fixed w-full top-0 z-[99] transition-colors duration-300 ease-in-out ${
         theme === "dark" && isScrolled
-          ? "bg-[#2C2C29]"
+          ? "bg-[#30302c]"
           : theme === "light" && isScrolled
-          ? "bg-[#f0edd4]"
+          ? "bg-[#dbd9c6]"
           : "bg-transparent"
       }`}
     >
