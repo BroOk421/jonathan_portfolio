@@ -59,7 +59,7 @@ const Navbar = () => {
         theme === "dark" && isScrolled
           ? "bg-[#30302c]"
           : theme === "light" && isScrolled
-          ? "bg-[#dbd9c6]"
+          ? "bg-[#ece9c8]"
           : "bg-transparent"
       }`}
     >
@@ -130,11 +130,18 @@ const Navbar = () => {
                 Contact
               </button>
             </div>
-            <div>
-              <button
-                onClick={() => setMenu(true)}
-                className="hidden max-lg:block"
-              >
+            <div
+              className={`flex justify-center items-center pl-[20px] pr-[20px] pt-[5px] pb-[5px] rounded-full bg-[#dbac12]
+              hover:scale-[1.1] transition ease-out max-lg:hidden`}
+            >
+              <a href="https://drive.google.com/file/d/1oVaVuoQMRZtiH5bBX2Y9xZae4Vr_zQ7K/view?usp=sharing">
+                <button className={`font1 uppercase text-[#30302c]`}>
+                  My Resume
+                </button>
+              </a>
+            </div>
+            <div className="hidden max-lg:block">
+              <button onClick={() => setMenu(true)}>
                 <LuBolt
                   className="set-rotate text-[25px] mix-multiply"
                   style={{ color: theme === "dark" ? "#f0edd4" : "#2C2C29" }}

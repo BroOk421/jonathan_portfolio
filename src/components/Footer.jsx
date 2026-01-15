@@ -20,7 +20,7 @@ const Footer = () => {
       className={`flex flex-col self-start min-h-[60vh] w-full justify-between items-center pr-[10px] pl-[10px] pt-[100px] pb-[20px]${
         isVisible ? "visible" : ""
       } ${
-        theme === "dark" ? "bg-[#30302c]" : "bg-[#dbd9c6]"
+        theme === "dark" ? "bg-[#30302c]" : "bg-[#ece9c8]"
       } max-xl:min-h-[90vh]`}
     >
       <div className="flex h-auto w-[80%] gap-[150px] max-md:flex-col max-md:gap-[20px]">

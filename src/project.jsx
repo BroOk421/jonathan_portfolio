@@ -41,7 +41,7 @@ const projects = [
     tech: [<BiLogoJavascript />, { dark: BubbleCream, light: BubbleBlack }],
   },
   {
-    name: "Barcotech",
+    name: <a href="https://barcotech.net/">Barcotech</a>,
     image: Barcotech,
     tech: [
       <FaHtml5 />,

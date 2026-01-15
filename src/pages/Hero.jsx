@@ -6,6 +6,14 @@ import Carousel from "../components/Carousel.jsx";
 const Hero = () => {
   const { theme } = useTheme();
   const { isVisible, ref } = useScrollAnimation();
+
+  const scrollViewToSection = (id) => {
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <motion.div
       ref={ref}
@@ -39,9 +47,12 @@ const Hero = () => {
           Web Developer | Web Designer
         </p>
         <div className="flex justify-center items-center bg-[#d63737] pl-[35px] pr-[35px] pt-[10px] pb-[10px] mt-[40px] mb-[100px] rounded-full hover:scale-[1.1] transition ease-out max-md:mb-[50px]">
-          <a href="https://drive.google.com/file/d/1oVaVuoQMRZtiH5bBX2Y9xZae4Vr_zQ7K/view?usp=sharing">
-            <button className="font2 text-[#f0edd4]">Resume</button>
-          </a>
+          <button
+            className="font2 text-[#f0edd4]"
+            onClick={() => scrollViewToSection("about")}
+          >
+            About Me
+          </button>
         </div>
         <Carousel />
       </div>
